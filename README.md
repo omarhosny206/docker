@@ -21,11 +21,11 @@ cd docker
 Build the Docker image:
 ```bash
 docker build -t image-name:tag -f file_name .
-# e.g. docker build -t image-name:tag -f java17.maven.Dockerfile .
+# e.g. docker build -t my-java17-app:v1 -f java17.maven.Dockerfile .
 ```
 
 Run the Docker container:
 ```bash
 docker run -d -p port-on-host:post-inside-container image-name:tag
-# e.g. docker run -d -p 8080:8080 image-name:tag
+# e.g. docker run -d -p 8080:8080 my-java17-app:v1
 ```
