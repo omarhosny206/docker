@@ -29,3 +29,8 @@ Run the Docker container:
 docker run -d -p port-on-host:post-inside-container image-name:tag
 # e.g. docker run -d -p 8080:8080 my-java17-app:v1
 ```
+
+## Available images
+- [Java 17 + Gradle](./java17.gradle.Dockerfile)
+- [Java 17 + Maven](./java17.maven.Dockerfile)
+- [Node 16](./node16.Dockerfile)
