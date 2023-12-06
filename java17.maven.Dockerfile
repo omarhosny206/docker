@@ -1,5 +1,5 @@
 # Stage 1: Build the application
-FROM maven:latest as build
+FROM maven:3.9.5-amazoncorretto-17 as build
 
 WORKDIR /app
 
@@ -18,4 +18,4 @@ WORKDIR /app
 
 COPY --from=build /app/target/*.jar /app/app.jar
 
-CMD ["java", "-jar", "app.jar"]
+CMD ["java", "-jar", "app.jar"]z
