@@ -33,4 +33,5 @@ docker run -d -p port-on-host:post-inside-container image-name:tag
 ## Available images
 - [Java 17 + Gradle](./java17.gradle.Dockerfile)
 - [Java 17 + Maven](./java17.maven.Dockerfile)
-- [Node 16](./node16.Dockerfile)
+- [Node 20 + JavaScript](./node20.js.Dockerfile)
+- [Node 20 + TypeScript](./node20.ts.Dockerfile)
