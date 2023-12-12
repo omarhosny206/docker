@@ -12,7 +12,7 @@ COPY ./src ./src
 RUN mvn clean package -DskipTests
 
 # Stage 2: Create a runtime container
-FROM amazoncorretto:17 as runtime
+FROM amazoncorretto:17-alpine as runtime
 
 WORKDIR /app
 
