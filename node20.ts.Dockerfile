@@ -1,5 +1,5 @@
 # Stage 1: Build the application
-FROM node:20-alpine as build
+FROM node:20-alpine as builder
 
 WORKDIR /app
 
@@ -20,6 +20,6 @@ COPY package*.json .
 
 RUN npm install --production
 
-COPY --from=build ./app/dist ./dist
+COPY --from=builder ./app/dist ./dist
 
 CMD ["npm", "start"]
