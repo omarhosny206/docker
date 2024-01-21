@@ -26,7 +26,7 @@ docker build -t image-name:tag -f file_name .
 
 Run the Docker container:
 ```bash
-docker run -d -p port-on-host:post-inside-container image-name:tag
+docker run -d -p port-on-host:port-inside-container image-name:tag
 # e.g. docker run -d -p 8080:8080 my-java17-app:v1
 ```
 
