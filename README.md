@@ -35,4 +35,5 @@ docker run -d -p port-on-host:post-inside-container image-name:tag
 - [Java 17 + Maven](./java17.maven.Dockerfile)
 - [Node 20 + JavaScript](./node20.js.Dockerfile)
 - [Node 20 + TypeScript](./node20.ts.Dockerfile)
+- [Python 3.10](./python310.Dockerfile)
 - [GitHub self-hosted runner](./github-runner/Dockerfile)
